@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Kantor Panrita</string> <!-- nama Aplikasi  -->
+    <string name="slogan_splash">Urusan Kantor Lebih Mudah!</string>
+    <string name="title_activity_absen_in">Presensi</string>
+    <string name="name">Nama Sekolah</string>
+    <string name="email">Alamat Sekolah</string>
+    <string name="tbl_stts">Pilih Sekolah</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

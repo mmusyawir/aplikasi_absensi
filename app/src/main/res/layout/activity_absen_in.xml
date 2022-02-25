@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".absen_in"
+    android:orientation="horizontal">
+
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".absen_in" />
+
+
+<View
+    android:layout_width="wrap_content"
+    android:layout_height="85dp"
+    android:background="@drawable/bg_menu_back"
+    android:layout_marginTop="9dp"
+    android:layout_marginStart="4dp"
+    android:layout_marginEnd="4dp"
+    />
+    <TextView
+        android:id="@+id/aku"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginTop="0dp"
+        android:text="Lokasi Anda"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="3sp" />
+
+    <TextView
+        android:id="@+id/nilai_jarak"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="14dp"
+        android:text="AKtifkan GPS Anda"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/kordinatxx"
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginTop="60dp"
+        android:text="Lokasi Anda"
+        android:textColor="#000000"
+        android:textSize="9sp" />
+
+    <TextView
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginTop="59dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textAlignment="center"
+        android:text="Lingkaran Merah adalah Toleransi Keberadaan Anda didalam Lokasi Sekolah."
+        android:textColor="#FDFCFC"/>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="179dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/back_next_log"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:fontFamily="@font/latobold"
+            android:text="Jarak Anda : "
+            android:textAlignment="center"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/nilai_stag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/latobold"
+            android:text="Aktifkan GPS Anda"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jika lokasi tidak Sesuai, Tekan Tombol Kembali."
+            android:textAlignment="center"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="19dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            >
+            <Button
+                android:id="@+id/back1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kembali"
+                android:background="#FFC107"
+                android:layout_weight="1.0"
+                />
+            <Button
+                android:id="@+id/selfie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lanjutkan"
+                android:background="#17784E"
+                android:textColor="#ffffff"
+                android:layout_weight="1.0"
+                />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "236272428410",
+    "firebase_url": "https://aplikasi-presensi-skripsi-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "aplikasi-presensi-skripsi",
+    "storage_bucket": "aplikasi-presensi-skripsi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:236272428410:android:959b9180d6b60140a6e2c3",
+        "android_client_info": {
+          "package_name": "com.example.disdik_sulsel.aplikasi_presensi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "236272428410-e7h9np76ckvvpehj1riiej1a9v0kcosu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.disdik_sulsel.aplikasi_presensi",
+            "certificate_hash": "fefd091e94532a42753ef07b9d560ee55d217e0f"
+          }
+        },
+        {
+          "client_id": "236272428410-t19g2337ksla0lb75bavskv2jtjqmpg0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWBFGgIbQ7Y__vGFYYsbnxGHWDhEOBbJ4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "236272428410-t19g2337ksla0lb75bavskv2jtjqmpg0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

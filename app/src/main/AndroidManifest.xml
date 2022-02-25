@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.disdik_sulsel.aplikasi_presensi">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+        <activity android:name="com.example.disdik_sulsel.aplikasi_presensi.ijin_hadir"></activity>
+        <activity android:name="com.example.disdik_sulsel.aplikasi_presensi.popup_v_gambar" />
+        <activity android:name="com.example.disdik_sulsel.aplikasi_presensi.report_absen" />
+        <activity android:name="com.example.disdik_sulsel.aplikasi_presensi.sukses_absen" />
+        <activity android:name="com.example.disdik_sulsel.aplikasi_presensi.pengembangan" />
+        <activity android:name="com.example.disdik_sulsel.aplikasi_presensi.kosong" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name="com.example.disdik_sulsel.aplikasi_presensi.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.disdik_sulsel.aplikasi_presensi.get_start" />
+        <activity android:name="com.example.disdik_sulsel.aplikasi_presensi.Login_activity" />
+        <activity android:name="com.example.disdik_sulsel.aplikasi_presensi.profile" />
+        <activity android:name="com.example.disdik_sulsel.aplikasi_presensi.presensi" />
+        <activity android:name="com.example.disdik_sulsel.aplikasi_presensi.absen_masuk" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name="com.example.disdik_sulsel.aplikasi_presensi.absen_in"
+            android:label="@string/title_activity_absen_in" />
+        <activity android:name="com.example.disdik_sulsel.aplikasi_presensi.w_selfie" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.disdik_sulsel.android.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

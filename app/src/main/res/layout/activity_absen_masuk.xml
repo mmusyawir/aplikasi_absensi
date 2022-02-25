@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".absen_masuk">
+
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/bg_menu"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/view4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/mmedium"
+            android:text="PRESENSI"
+            android:textColor="#838282"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/mregular"
+            android:text="Ambil Kordinat, Selfie Kirim !"
+            android:textColor="#838282"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/line" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="19dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="8dp"
+            android:text="Lokasi anda Saat ini :"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/lati"
+            android:layout_width="match_parent"
+            android:layout_height="19dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginEnd="8dp"
+            android:text="Latitude :"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/longi"
+            android:layout_width="match_parent"
+            android:layout_height="19dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginEnd="8dp"
+            android:text="Longitude :"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="19dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Jam Pengambilan Saat ini :"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="19dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginEnd="8dp"
+            android:text="Jam :"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginEnd="8dp"
+            android:text="Jam Absen akan disesuaikan dengan waktu pengiriman data ke Server."
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="19dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="10dp"
+            android:text="Foto Selfie :"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="220dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="28dp"
+            android:layout_marginEnd="28dp"
+            android:background="@drawable/bg_blue" />
+
+        <!-- BARIS PERTAMA -->
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

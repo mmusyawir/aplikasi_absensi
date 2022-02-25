@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+    <background android:drawable="@drawable/employee"/> <!-- Icon Aplikasi -->
+    <foreground android:drawable="@drawable/employee" /> <!-- Icon Aplikasi -->
+
+    <!-- Icon Aplikasi -->
+</adaptive-icon>

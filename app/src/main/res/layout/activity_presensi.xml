@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    tools:context=".presensi">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_presensi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.github.florent37.shapeofview.shapes.CircleView
+        android:id="@+id/profile_b"
+        android:layout_width="131dp"
+        android:layout_height="131dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:id="@+id/fotox"
+            android:layout_width="131dp"
+            android:layout_height="131dp"
+            android:src="@drawable/icon_nopic" />
+    </com.github.florent37.shapeofview.shapes.CircleView>
+
+
+
+    <TextView
+        android:id="@+id/nama_user"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/mmedium"
+        android:text="MUHAMMAD MUSYAWIR"
+        android:textColor="#FFFF"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_b" />
+
+    <TextView
+        android:id="@+id/sekolah"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="8dp"
+        android:text="DISDIK PROVINSI SUL-SEL"
+        android:textColor="#FFFF"
+        android:fontFamily="@font/mmedium"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_b" />
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/kembali"
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tanggal_absen"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/mlight"
+        android:text="00:00:00"
+        android:textColor="#FFFF"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_b" />
+
+    <TextView
+        android:id="@+id/jam"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/mlight"
+        android:text="Tanggal Absen"
+        android:textColor="#FFFF"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tanggal_absen" />
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/bg_ico_in"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tanggal_absen" />
+
+    <Button
+        android:id="@+id/masuk"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/masuk"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintStart_toStartOf="@+id/button"
+        app:layout_constraintTop_toTopOf="@+id/button" />
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="80dp"
+        android:background="@drawable/bg_icon_keluar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tanggal_absen" />
+
+    <Button
+        android:id="@+id/pulang"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/pulang"
+        app:layout_constraintEnd_toEndOf="@+id/button2"
+        app:layout_constraintStart_toStartOf="@+id/button2"
+        app:layout_constraintTop_toTopOf="@+id/button2"/>
+
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="220dp"
+        android:background="@drawable/bg_icon_lap"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tanggal_absen" />
+
+    <Button
+        android:id="@+id/laporan"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/laporan"
+        app:layout_constraintEnd_toEndOf="@+id/button5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/button5"
+        app:layout_constraintTop_toTopOf="@+id/button5" />
+    <Button
+        android:visibility="gone"
+        android:id="@+id/button6"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="184dp"
+        android:background="@drawable/bg_icon_ijin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tanggal_absen" />
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/ijin"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/form_ijin"
+        app:layout_constraintEnd_toEndOf="@+id/button6"
+        app:layout_constraintStart_toStartOf="@+id/button6"
+        app:layout_constraintTop_toTopOf="@+id/button6" />
+
+
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

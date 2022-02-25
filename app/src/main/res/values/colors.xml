@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#5D5959</color>
+    <color name="colorAccent">#EDE1E6</color>
+    <color name="popup">#2f333f</color>
+    <color name="orange">#FF5722</color>
+    <color name="white">#FFFF</color>
+    <color name="green">#138847</color>
+    <color name="bluelight">#0823C4</color>
+    <color name="tombol_login">#5D5959</color>
+    <color name="huruf_splash">#8D8D8D</color>
+
+
+</resources>

@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".report_absen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#FF5722"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <ImageView
+                android:id="@+id/kembali"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/kembali_back"
+                android:backgroundTint="#ffffff" />
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/sfuiheavy"
+                android:text="Pencarian Kehadiran Harian"
+                android:textColor="#ffffff"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Laporan Kehadiran Harian Anda. Untuk melihat Kehadiran Anda secara detil, bisa dilihat melalui Admin Sekolah Anda."
+            android:textAlignment="center"
+            android:layout_marginBottom="9dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginEnd="7dp"
+        />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="2"
+            >
+            <Button
+                android:id="@+id/bt_datepicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="Pilih Tanggal"
+                android:background="#4CAF50"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:fontFamily="@font/ubuntulight"
+                />
+            <Button
+                android:visibility="gone"
+                android:id="@+id/lihat_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="Lihat Data"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:background="#E91E63"
+                android:textColor="#ffffff"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible"
+        >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/view_hasil"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="75dp"
+                android:background="@drawable/bg_menu"
+                android:orientation="vertical"
+                android:paddingLeft="7dp"
+                android:paddingTop="5dp"
+                android:paddingRight="7dp"
+                android:paddingBottom="45dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_selfie">
+                <TextView
+                    android:id="@+id/tv_dateresult"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tanggal yang dipilih adalah :"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:layout_marginTop="9dp"
+                    android:layout_marginBottom="15dp"
+                    android:textSize="17sp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mmedium"
+                    android:text="HASIL PENCARIAN :"
+                    android:textStyle="bold"
+                    android:textColor="#838282"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mregular"
+                    android:text="Data yang ditampilkan berdasarkan Tanggal yang dipilih."
+                    android:textColor="#838282"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="9dp"
+                    android:background="@drawable/lin_gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mregular"
+                    android:text="KEHADIRAN PAGI :"
+                    android:textColor="#838282"
+                    android:textStyle="bold"
+                    android:textSize="17sp" />
+                <TextView
+                    android:id="@+id/nomor1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mregular"
+                    android:text="----"
+                    android:textColor="#838282"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mregular"
+                    android:text="Waktu :"
+                    android:textColor="#838282"
+                    android:textSize="15sp" />
+                <TextView
+                    android:id="@+id/nomor2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mregular"
+                    android:text="----"
+                    android:textColor="#838282"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mregular"
+                    android:text="Lat / Long:"
+                    android:textColor="#838282"
+                    android:textSize="15sp" />
+                <TextView
+                    android:id="@+id/nomor3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mregular"
+                    android:text="----"
+                    android:textColor="#838282"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mregular"
+                    android:text="Status :"
+                    android:textColor="#838282"
+                    android:textSize="15sp" />
+                <TextView
+                    android:id="@+id/nomor4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mregular"
+                    android:text="----"
+                    android:textColor="#838282"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mregular"
+                    android:text="Gambar Kehadiran :"
+                    android:textColor="#838282"
+                    android:textSize="15sp" />
+                <Button
+                    android:id="@+id/nomor5"
+                    android:layout_width="match_parent"
+                    android:layout_marginEnd="125dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mregular"
+                    android:text="Klik untuk melihat Gambar"
+                    android:textColor="#000000"
+                    android:background="#EAE3D9"
+                    android:textSize="12sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_marginTop="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mregular"
+                    android:text="ABSEN PULANG :"
+                    android:textColor="#838282"
+                    android:textStyle="bold"
+                    android:textSize="17sp" />
+                <TextView
+                    android:id="@+id/nomor6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mregular"
+                    android:text="----"
+                    android:textColor="#838282"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mregular"
+                    android:text="Waktu :"
+                    android:textColor="#838282"
+                    android:textSize="15sp" />
+                <TextView
+                    android:id="@+id/nomor7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mregular"
+                    android:text="----"
+                    android:textColor="#838282"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mregular"
+                    android:text="Lat / Long:"
+                    android:textColor="#838282"
+                    android:textSize="15sp" />
+                <TextView
+                    android:id="@+id/nomor8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mregular"
+                    android:text="----"
+                    android:textColor="#838282"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mregular"
+                    android:text="Status :"
+                    android:textColor="#838282"
+                    android:textSize="15sp" />
+                <TextView
+                    android:id="@+id/nomor9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mregular"
+                    android:text="----"
+                    android:textColor="#838282"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mregular"
+                    android:text="Gambar Kehadiran :"
+                    android:textColor="#838282"
+                    android:textSize="15sp" />
+                <Button
+                    android:id="@+id/nomor10"
+                    android:layout_width="match_parent"
+                    android:layout_marginEnd="125dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mregular"
+                    android:text="Klik untuk melihat Gambar"
+                    android:textColor="#000000"
+                    android:background="#EAE3D9"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="9dp"
+                    android:background="@drawable/lin_gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mregular"
+                    android:text="Jam Absen akan diambil saat Mengirim data ke Server.\nPenggunaan FAKE GPS ataupun FAKE CAMERA akan terbaca di System."
+                    android:textColor="#838282"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+
+</LinearLayout>
